@@ -19,3 +19,4 @@ git remote set-url origin https://github.com/MyRepo/project.git
 git add .
 git commit -m "initial commit"
 git push origin master (ou main dependendo da branch que estiver usando)
+
