@@ -76,7 +76,3 @@ header.wrapper-header nav.navbar ul.nav-list li a:hover {
         display: block;
     }
 }
-
-header.wrapper-header nav.navbar ul.nav-list.active{
-    transform: translateX(0);
-}
