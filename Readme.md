@@ -8,3 +8,14 @@
 #TECLAS DE ATALHO
 
 Identação: Shift + Alt + f (Windows)
+
+
+
+#GitHub
+
+envio para o github caso dê o erro de repositorio não encontrado:
+
+git remote set-url origin https://github.com/MyRepo/project.git
+git add .
+git commit -m "initial commit"
+git push origin master (ou main dependendo da branch que estiver usando)
