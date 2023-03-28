@@ -7,31 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfolio </title>
 
-    <link rel="stylesheet" href="style.css">
-    <script defer src="mobile-navbar.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
 </head>
 
 <body>
 
     <header class="wrapper-header">
-        <nav class="navbar">
 
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Amilton Melo</h1>
             </div>
 
-            <ul class="nav-list">
-                <li><a href="/">Inicio</li></a>
-                <li><a href="/">Projetos</li></a>
-                <li><a href="/">Sobre</li></a>
-                <li><a href="/">Contato</li></a>
-            </ul>
-        </nav>
-        <main>
+            <div class="nav-list">
+                <ul>
+                <li class="nav-item"><a href="/" class="nav-link">Inicio</li></a>
+                <li class="nav-item"><a href="/" class="nav-link">Projetos</li></a>
+                <li class="nav-item"><a href="/" class="nav-link">Sobre</li></a>
+                <li class="nav-item"><a href="/" class="nav-link">Contato</li></a>
+                </ul>
+            </div>
 
-        </main>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white.png" alt="" width="38%"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/" class="nav-link">Inicio</li></a>
+                <li class="nav-item"><a href="/" class="nav-link">Projetos</li></a>
+                <li class="nav-item"><a href="/" class="nav-link">Sobre</li></a>
+                <li class="nav-item"><a href="/" class="nav-link">Contato</li></a>
+            </ul>
+        </div>
+
     </header>
 
 </body>

@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+}
+
+:root {
+    --bg-body: #09041b;
+    --bg-navbar: #0d012d3e;
+    --color-white: #ffff;
+    --hover-a-header: #1dd0f8;
+}
+body{
+    background: var(--bg-body);
+}
+header.wrapper-header nav.navbar {
+    display: flex;
+    background-color: var(--bg-navbar);
+    align-items: center;
+    height: 10vh;
+    justify-content: space-around;
+}
+
+header.wrapper-header nav.navbar div.logo{
+    display: flex;
+    align-items: center;
+}
+header.wrapper-header nav.navbar div.logo h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    font-weight: 0;
+}
+
+header.wrapper-header nav.navbar div.nav-list ul{
+    list-style: none;
+    display: flex;
+}
+
+header.wrapper-header nav.navbar div.nav-list ul li.nav-item {
+    letter-spacing: 2px;
+    margin-left: 34px;
+}
+
+header.wrapper-header nav.navbar div.nav-list ul li.nav-item a {
+    color: var(--color-white);
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.5s;
+    padding: 4px;
+    position: relative;
+}
+
+header.wrapper-header nav.navbar div.nav-list ul li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--hover-a-header);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    
+}
+
+header.wrapper-header nav.navbar div.nav-list ul li a:hover{
+    color: var(--hover-a-header);
+}
+header.wrapper-header nav.navbar div.nav-list ul li a:hover:before {
+    visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+header.wrapper-header nav.navbar div.mobile-menu-icon{
+    display: none;
+}
+header.wrapper-header div.mobile-menu{
+    display: none;
+}
+
+@media (max-width: 680px){
+   header.wrapper-header nav.navbar{
+    padding: 1.2em;
+   }
+
+   header.wrapper-header nav.navbar div.logo h1{
+    font-size: 1.2em;
+   }
+
+   header.wrapper-header nav.navbar .nav-item{
+    display: none;
+   }
+
+   header.wrapper-header nav.navbar div.mobile-menu-icon button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+   }
+
+   header.wrapper-header div.mobile-menu{
+    background: var(--bg-navbar);
+    display: block;
+   }
+   header.wrapper-header div.mobile-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.2em;
+    padding-top: 20px;
+   }
+   header.wrapper-header div.mobile-menu ul li{
+    letter-spacing: 2px;
+   }
+   header.wrapper-header div.mobile-menu ul li a{
+    text-decoration: none;
+    padding: 4px;
+    color: var(--color-white);
+    transition: 0.3s;
+    position: relative;
+   }
+
+   header.wrapper-header div.mobile-menu ul li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--hover-a-header);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    
+    }
+
+    header.wrapper-header div.mobile-menu ul li a:hover{
+        color: var(--hover-a-header);
+    }
+    header.wrapper-header div.mobile-menu ul li a:hover:before {
+
+        visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    
+    
+}
