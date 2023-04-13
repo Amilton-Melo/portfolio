@@ -6,14 +6,22 @@
 }
 
 :root {
-    --bg-body: #09041b;
-    --bg-navbar: #0d012d3e;
+    --bg-body: #08031a;
+    --bg-navbar: #0c0a51b2;
     --color-white: #ffff;
     --hover-a-header: #1dd0f8;
+    --shadow-capa:#081abb;
 }
+
 body{
     background: var(--bg-body);
 }
+
+header{
+    position: sticky;
+    top: 0;
+}
+
 header.wrapper-header nav.navbar {
     display: flex;
     background-color: var(--bg-navbar);
@@ -26,6 +34,7 @@ header.wrapper-header nav.navbar div.logo{
     display: flex;
     align-items: center;
 }
+
 header.wrapper-header nav.navbar div.logo h1{
     color: white;
     letter-spacing: 2px;
@@ -45,7 +54,7 @@ header.wrapper-header nav.navbar div.nav-list ul li.nav-item {
 
 header.wrapper-header nav.navbar div.nav-list ul li.nav-item a {
     color: var(--color-white);
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-decoration: none;
     font-weight: 400;
     transition: 0.5s;
@@ -66,49 +75,60 @@ header.wrapper-header nav.navbar div.nav-list ul li a:before{
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-    
 }
 
 header.wrapper-header nav.navbar div.nav-list ul li a:hover{
     color: var(--hover-a-header);
 }
+
 header.wrapper-header nav.navbar div.nav-list ul li a:hover:before {
     visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-
-header.wrapper-header nav.navbar div.mobile-menu-icon{
+header.wrapper-header .mobile-menu-icon{
+    cursor: pointer;
     display: none;
 }
+
+header.wrapper-header .mobile-menu-icon div{
+    width: 32px;
+    height: 2px;
+    background-color: var(--color-white);
+    margin: 8px;
+}
+
 header.wrapper-header div.mobile-menu{
     display: none;
 }
 
 @media (max-width: 680px){
+
    header.wrapper-header nav.navbar{
     padding: 1.2em;
+    justify-content: center;
+    height: 3vh;
    }
 
    header.wrapper-header nav.navbar div.logo h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
    }
 
    header.wrapper-header nav.navbar .nav-item{
     display: none;
    }
 
-   header.wrapper-header nav.navbar div.mobile-menu-icon button{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-   }
+   header.wrapper-header .mobile-menu-icon{
+    display: none;
+    }
 
    header.wrapper-header div.mobile-menu{
     background: var(--bg-navbar);
     display: block;
+    padding-bottom: 14px;
    }
+
    header.wrapper-header div.mobile-menu ul{
     display: flex;
     flex-wrap: wrap;
@@ -117,9 +137,11 @@ header.wrapper-header div.mobile-menu{
     font-size: 1.2em;
     padding-top: 20px;
    }
+
    header.wrapper-header div.mobile-menu ul li{
     letter-spacing: 2px;
    }
+
    header.wrapper-header div.mobile-menu ul li a{
     text-decoration: none;
     padding: 4px;
@@ -141,7 +163,6 @@ header.wrapper-header div.mobile-menu{
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-    
     }
 
     header.wrapper-header div.mobile-menu ul li a:hover{
@@ -154,5 +175,69 @@ header.wrapper-header div.mobile-menu{
       transform: scaleX(1);
     }
     
-    
+}
+
+section.cabecalho{
+    margin-top: 6%;
+    width: 100%;
+}
+section.cabecalho .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.cabecalho .container .box-texto{
+    width: 65%;
+}
+section.cabecalho .container .box-texto h1{
+    color: white;
+    border-right: 4px solid;
+    width: 11.5ch;
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(12) infinite alternate,
+    blinking 0.5s infinite step-end alternate;
+    margin-left: 12%;
+    margin-bottom: 2%;
+}
+section.cabecalho .container .box-texto h2{
+    color: white;
+    margin-left: 12%;
+    line-height: 1.5em;
+    font-size: 1.4em;
+}
+section.cabecalho .container .box-texto .linguagens{
+    margin-left: 12%;
+    margin-top: 2%;
+}
+section.cabecalho .container .box-texto .linguagens ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+section.cabecalho .container .box-texto .linguagens ul li{
+    width: 14%;
+}
+section.cabecalho .container .box-texto .linguagens ul li img{
+    width: 80%;
+}
+section.cabecalho .container .capa{
+    width: 35%;
+}
+section.cabecalho .container .capa img{
+    border-radius: 50%;
+    width: 75%;
+    box-shadow: 2px 2px 8px 2px var(--shadow-capa);
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
 }
