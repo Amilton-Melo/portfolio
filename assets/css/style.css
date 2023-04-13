@@ -200,6 +200,7 @@ section.cabecalho .container .box-texto h1{
     blinking 0.5s infinite step-end alternate;
     margin-left: 12%;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 section.cabecalho .container .box-texto h2{
     color: white;
