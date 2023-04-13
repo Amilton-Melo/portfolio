@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -11,15 +12,11 @@
     --color-white: #ffff;
     --hover-a-header: #1dd0f8;
     --shadow-capa:#081abb;
+    --bg-button-projetos: #09279d;
 }
 
 body{
     background: var(--bg-body);
-}
-
-header{
-    position: sticky;
-    top: 0;
 }
 
 header.wrapper-header nav.navbar {
@@ -252,16 +249,19 @@ section.cabecalho .container .capa img{
 }
 
 
-
+section.projetos{
+    margin-bottom: 4%;
+}
 section.projetos .container{
     width: 100%;
 }
 section.projetos .container .titulo{
     width: 100%;
-    margin-top: 2%;
+    margin-top: 6%;
     font-size: 2.2em;
     color: var(--color-white);
     text-align: center;
+    margin-bottom: 2%;
 }
 section.projetos .container .cards{
     width: 100%;
@@ -271,11 +271,28 @@ section.projetos .container .cards .container-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
+
 section.projetos .container .cards .container-cards .card-projeto{
-    border: 1px solid red;
+    box-shadow: 2px 2px 8px 2px var(--shadow-capa);
     text-align: center;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 2%;
-    padding: 4px;
+    padding: 1%;
+}
+section.projetos .container .cards .container-cards .card-projeto .texto-card{
+    color: var(--color-white);
+    margin-top: 4%;
+    font-size: 1.4em;
+    margin-bottom: 1%;
+}
+section.projetos .container .cards .container-cards .card-projeto .texto-card button{
+    background: var(--bg-button-projetos);
+    padding: 1% 6%;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    margin-top: 4%;
+    cursor: pointer;
 }
