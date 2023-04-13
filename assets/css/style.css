@@ -277,8 +277,8 @@ section.projetos .container .cards .container-cards{
 section.projetos .container .cards .container-cards .card-projeto{
     box-shadow: 2px 2px 8px 2px var(--shadow-capa);
     text-align: center;
-    margin-top: 3%;
-    margin-left: 2%;
+    margin-top: 4%;
+    margin-left: 4%;
     padding: 1%;
 }
 section.projetos .container .cards .container-cards .card-projeto .texto-card{
