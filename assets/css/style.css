@@ -178,16 +178,18 @@ header.wrapper-header div.mobile-menu{
 }
 
 section.cabecalho{
-    margin-top: 6%;
     width: 100%;
+    box-shadow: 1px 4px 4px 1px rgba(5, 12, 136, 0.604);
 }
 section.cabecalho .container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 6%;
 }
 section.cabecalho .container .box-texto{
     width: 65%;
+    margin-bottom: 11%;
 }
 section.cabecalho .container .box-texto h1{
     color: white;
@@ -222,9 +224,15 @@ section.cabecalho .container .box-texto .linguagens ul li{
 }
 section.cabecalho .container .box-texto .linguagens ul li img{
     width: 80%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section.cabecalho .container .box-texto .linguagens ul li img:hover{
+    transform: scale(1.1);
 }
 section.cabecalho .container .capa{
     width: 35%;
+    text-align: center;
 }
 section.cabecalho .container .capa img{
     border-radius: 50%;
@@ -241,4 +249,33 @@ section.cabecalho .container .capa img{
     50%{
         border-color: transparent;
     }
+}
+
+
+
+section.projetos .container{
+    width: 100%;
+}
+section.projetos .container .titulo{
+    width: 100%;
+    margin-top: 2%;
+    font-size: 2.2em;
+    color: var(--color-white);
+    text-align: center;
+}
+section.projetos .container .cards{
+    width: 100%;
+}
+section.projetos .container .cards .container-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.projetos .container .cards .container-cards .card-projeto{
+    border: 1px solid red;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 4px;
 }
