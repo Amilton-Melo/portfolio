@@ -179,7 +179,6 @@ header.wrapper-header div.mobile-menu{
 
 section.cabecalho{
     width: 100%;
-    box-shadow: 1px 4px 4px 1px rgba(5, 12, 136, 0.604);
 }
 section.cabecalho .container{
     width: 100%;
@@ -303,4 +302,54 @@ section.projetos .container .cards .container-cards .card-projeto .texto-card bu
 }
 section.projetos .container .cards .container-cards .card-projeto .texto-card button:hover{
     transform: scale(1.08);
+}
+
+@media screen and (max-width: 780px){
+    section.cabecalho .container .box-texto{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    section.cabecalho .container .box-texto h1{
+        margin-left: 4%;
+        font-size: 2.5em;
+    }
+    section.cabecalho .container .box-texto h2{
+        margin-left: 4%;
+    }
+    section.cabecalho .container .box-texto .linguagens{
+        margin-left: 0;
+    }
+    section.cabecalho .container .box-texto .linguagens ul{
+        width: 100%;
+        justify-content: space-around;
+    }
+    section.cabecalho .container .capa{
+        width: 100%;
+    }
+    section.cabecalho .container .capa img{
+        width: 30%;
+        margin-top: -3%;
+        margin-bottom: 10%;
+    }
+    section.projetos .container .cards .container-cards{
+        display: flex;
+    }
+    section.projetos .container .cards .container-cards .card-projeto{
+        width: 60%;
+        padding: 0;
+        margin-left: 0;
+    }
+    section.projetos .container .cards .container-cards .card-projeto img{
+        width: 40%;
+    }
+    section.projetos .container .cards .container-cards .card-projeto .texto-card{
+        margin-top: 1%;
+    }
+    section.projetos .container .cards .container-cards .card-projeto .texto-card button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    section.projetos .container .cards .container-cards .card-projeto .img-card{
+        margin-top: 2%;
+    }
 }
