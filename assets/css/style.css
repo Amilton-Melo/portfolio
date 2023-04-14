@@ -12,13 +12,16 @@
     --color-white: #ffff;
     --hover-a-header: #1dd0f8;
     --shadow-capa:#081abb;
-    --bg-button-projetos: #09279d;
+    --bg-button-projetos: #133cce;
 }
 
 body{
     background: var(--bg-body);
 }
-
+header{
+    position: sticky;
+    top: 0;
+}
 header.wrapper-header nav.navbar {
     display: flex;
     background-color: var(--bg-navbar);
@@ -277,9 +280,10 @@ section.projetos .container .cards .container-cards{
 section.projetos .container .cards .container-cards .card-projeto{
     box-shadow: 2px 2px 8px 2px var(--shadow-capa);
     text-align: center;
-    margin-top: 4%;
+    margin-top: 3%;
     margin-left: 4%;
     padding: 1%;
+    background: rgba(12, 55, 225, 0.185);
 }
 section.projetos .container .cards .container-cards .card-projeto .texto-card{
     color: var(--color-white);
@@ -295,4 +299,8 @@ section.projetos .container .cards .container-cards .card-projeto .texto-card bu
     color: white;
     margin-top: 4%;
     cursor: pointer;
+    transition: 0.3s;
+}
+section.projetos .container .cards .container-cards .card-projeto .texto-card button:hover{
+    transform: scale(1.08);
 }
